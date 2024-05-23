@@ -243,9 +243,6 @@ div#question__order {
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    height: 100%;
-  }
 
   #container {
     width: 100%;
