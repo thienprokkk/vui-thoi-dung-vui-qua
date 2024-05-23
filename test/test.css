@@ -23,7 +23,7 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 200;
   font-style: normal;
-  /* background-color: var(--main-color); */
+  color: #2d3e5d;
 }
 
 #window__close {
@@ -109,7 +109,7 @@ div#question__order {
 
 #spacer {
   font-size: 1.3em;
-  color: rgb(130, 130, 130);
+  color: #52575c;
   text-align: center;
   padding-top: 0.3em;
 }
@@ -197,6 +197,7 @@ div#question__order {
 /* 1000px */
 
 .choose__btn {
+  color: #3e4c63;
   background-color: transparent;
   border: 1px solid var(--main-color);
   padding: 11px 68px;
