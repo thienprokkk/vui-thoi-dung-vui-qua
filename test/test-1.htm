@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <div id="window__close"></div>
+  <div id="container">
+
+    <header id="header__container">
+      <div>
+        <button id="back__btn">Home</button>
+      </div>
+      <div id="question__order">1 of 19</div>
+    </header>
+
+    <p id="spacer">Let your emotions make the choices!</p>
+
+    <div id="card__container">
+      <div id="card">
+
+        <div id="header__card">
+          <img src="../images/original-image.jpg" alt="image">
+        </div>
+
+        <div id="content__card">
+          <h1 id="title-content">How can I help you?</h1>
+          <p id="content">Are you feeling distress?</p>
+        </div>
+
+        <div id="choose__card">
+          <button id="no-btn" class="choose__btn">NO</button>
+          <button id="yes-btn" class="choose__btn">YES </button>
+        </div>
+
+      </div>
+    </div>
+
+    <footer id="footer"> </footer>
+  </div>
+  <script src="./test.js"></script>
+  <script>
+    // Mất ý nghĩa việc học
+    TakeATest({
+      containerSelector: '#container',
+      backButtonSelector: '#back__btn',
+      cardImageSelector: '#header__card img',
+      buttonsSelector: '.choose__btn',
+      rules: [
+        TakeATest.changeQuestion(
+          '#window__close', '#card', 'question__changing', '#spacer', '#question__order', '#content', '#yes-btn',
+          [
+            "Có phải bạn cảm thấy việc học hiện nay đang trở nên vô nghĩa không?",
+            "Có phải áp lực từ điểm số làm bạn mất đi niềm vui trong việc học không?",
+            "Bạn có cảm thấy chương trình học hiện tại không giúp ích nhiều cho sự nghiệp tương lai của mình không?",
+            "Có phải bạn thấy việc học chỉ để thi cử mà không thực sự hiểu kiến thức không?",
+            "Có phải bạn thấy việc học đang bị quá tải bởi những môn học không cần thiết không?",
+            "Bạn có nghĩ rằng phương pháp giảng dạy hiện tại làm mất đi sự hứng thú của bạn trong việc học không?",
+            "Có phải bạn cảm thấy rằng những kỹ năng thực tế cần thiết cho cuộc sống không được giảng dạy trong trường học không?",
+            "Bạn có thấy việc học trực tuyến khiến bạn cảm thấy cô đơn và mất động lực không?",
+            "Có phải bạn cảm thấy việc học tập không mang lại giá trị thực tiễn cho cuộc sống hàng ngày của mình không?",
+            "Bạn có nghĩ rằng việc học hiện tại không thúc đẩy sự sáng tạo và tư duy phản biện của bạn không?",
+          ],
+        )
+      ],
+    })
+  </script>
+</body>
+
+</html>

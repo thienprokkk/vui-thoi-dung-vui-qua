@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <div id="window__close"></div>
+
+  <div id="container">
+
+    <header id="header__container">
+      <div>
+        <button id="back__btn">Home</button>
+      </div>
+      <div id="question__order">1 of 19</div>
+    </header>
+
+    <p id="spacer">Let your emotions make the choices!</p>
+
+    <div id="card__container">
+      <div id="card">
+
+        <div id="header__card">
+          <img src="../images/original-image.jpg" alt="image">
+        </div>
+
+        <div id="content__card">
+          <h1 id="title-content">How can I help you?</h1>
+          <p id="content">Are you feeling distress?</p>
+        </div>
+
+        <div id="choose__card">
+          <button id="no-btn" class="choose__btn">NO</button>
+          <button id="yes-btn" class="choose__btn">YES </button>
+        </div>
+
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+  </div>
+  <script src="./test.js"></script>
+  <script>
+    // Mất cân bằng cuộc sống
+    TakeATest({
+      containerSelector: '#container',
+      backButtonSelector: '#back__btn',
+      cardImageSelector: '#header__card img',
+      buttonsSelector: '.choose__btn',
+      rules: [
+        TakeATest.changeQuestion(
+          '#window__close', '#card', 'question__changing', '#spacer', '#question__order', '#content', '#yes-btn',
+          [
+            "Bạn có thường xuyên cảm thấy quá tải với khối lượng bài tập và việc học không?",
+            "Bạn có cảm thấy mình không có đủ thời gian để tham gia các hoạt động ngoại khóa hoặc xã hội không?",
+            "Bạn có thường xuyên cảm thấy căng thẳng hoặc lo lắng về kết quả học tập không?",
+            "Bạn có thấy mình thường xuyên phải thức khuya để hoàn thành bài tập hoặc chuẩn bị cho kỳ thi không?",
+            "Bạn có cảm thấy mình không có đủ thời gian dành cho gia đình và bạn bè do áp lực học tập không?",
+            "Bạn có thường xuyên bỏ qua các bữa ăn hoặc ăn không đúng giờ do phải tập trung vào việc học không?",
+            "Bạn có cảm thấy mình không có đủ giấc ngủ hoặc chất lượng giấc ngủ không tốt vì học tập không?",
+            "Bạn có cảm thấy khó khăn trong việc duy trì sức khỏe tinh thần do áp lực học tập không?",
+            "Bạn có cảm thấy mình không có đủ thời gian để thư giãn hoặc theo đuổi sở thích cá nhân không?",
+            "Bạn có cảm thấy mình không có đủ thời gian để tập thể dục hoặc vận động thể chất vì học tập không?",
+          ],
+        )
+      ],
+    })
+  </script>
+</body>
+
+</html>

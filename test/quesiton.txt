@@ -1,0 +1,52 @@
+// Mất ý nghĩa việc học
+const question1 = [
+  "Có phải bạn cảm thấy việc học hiện nay đang trở nên vô nghĩa không?",
+  "Có phải áp lực từ điểm số làm bạn mất đi niềm vui trong việc học không?",
+  "Bạn có cảm thấy chương trình học hiện tại không giúp ích nhiều cho sự nghiệp tương lai của mình không?",
+  "Có phải bạn thấy việc học chỉ để thi cử mà không thực sự hiểu kiến thức không?",
+  "Có phải bạn thấy việc học đang bị quá tải bởi những môn học không cần thiết không?",
+  "Bạn có nghĩ rằng phương pháp giảng dạy hiện tại làm mất đi sự hứng thú của bạn trong việc học không?",
+  "Có phải bạn cảm thấy rằng những kỹ năng thực tế cần thiết cho cuộc sống không được giảng dạy trong trường học không?",
+  "Bạn có thấy việc học trực tuyến khiến bạn cảm thấy cô đơn và mất động lực không?",
+  "Có phải bạn cảm thấy việc học tập không mang lại giá trị thực tiễn cho cuộc sống hàng ngày của mình không?",
+  "Bạn có nghĩ rằng việc học hiện tại không thúc đẩy sự sáng tạo và tư duy phản biện của bạn không?",
+];
+// So sánh bản thân
+const question2 = [
+  "Bạn cảm thấy bản thân mình không bằng bạn bè?",
+  "Bạn luôn cảm thấy bản thân mình kém cỏi?",
+  "Bạn đang “thèm muốn” những gì thuộc về người khác?",
+  "Bạn cảm thấy ganh tị khi thấy người khác hơn bản thân mình?",
+  "Bạn cảm thấy không bằng lòng khi người khác có được thứ mà bạn không thể có?",
+  "Bạn có tự cho rằng bản thân dù có nỗ lực thế nào cũng không thể đạt được những thành tựu nhưng người khác?",
+  "Bạn cảm thấy bản thân “không đủ tốt” trong mọi chuyện?",
+  "Bạn luôn cảm thấy tự ti, xấu hổ khi nói chuyện làm việc với những người giỏi hơn mình?",
+  "Bạn có cảm thấy không chấp nhận con người của mình?",
+  "Bạn cảm thấy không hài lòng về những gì mình đang có?",
+];
+// Áp lực điểm số
+const question3 = [
+  "Bạn cảm thấy áp lực học tập đến từ môi trường học tập không?",
+  "Gia đình bạn thường đặt áp lực học tập lên bạn không?",
+  "Bạn có cảm thấy áp lực từ bạn bè về việc học không?",
+  "Bạn đã từng cảm thấy áp lực lớn do một kỳ thi quan trọng không?",
+  "Bạn có thể kiểm soát được áp lực học tập hay không?",
+  "Bạn cảm thấy áp lực hơn vào cuối học kỳ không?",
+  "Áp lực học tập từ công việc làm bạn căng thẳng không?",
+  "Áp lực học tập đã gây ảnh hưởng đến sức khỏe tinh thần của bạn chưa?",
+  "Bạn thường sử dụng các phương pháp giảm bớt áp lực học tập không?",
+  "Bạn cảm thấy áp lực học tập đóng vai trò tích cực trong sự phát triển cá nhân của bạn không?",
+];
+// Mất cân bằng cuộc sống
+const question4 = [
+  "Bạn có thường xuyên cảm thấy quá tải với khối lượng bài tập và việc học không?",
+  "Bạn có cảm thấy mình không có đủ thời gian để tham gia các hoạt động ngoại khóa hoặc xã hội không?",
+  "Bạn có thường xuyên cảm thấy căng thẳng hoặc lo lắng về kết quả học tập không?",
+  "Bạn có thấy mình thường xuyên phải thức khuya để hoàn thành bài tập hoặc chuẩn bị cho kỳ thi không?",
+  "Bạn có cảm thấy mình không có đủ thời gian dành cho gia đình và bạn bè do áp lực học tập không?",
+  "Bạn có thường xuyên bỏ qua các bữa ăn hoặc ăn không đúng giờ do phải tập trung vào việc học không?",
+  "Bạn có cảm thấy mình không có đủ giấc ngủ hoặc chất lượng giấc ngủ không tốt vì học tập không?",
+  "Bạn có cảm thấy khó khăn trong việc duy trì sức khỏe tinh thần do áp lực học tập không?",
+  "Bạn có cảm thấy mình không có đủ thời gian để thư giãn hoặc theo đuổi sở thích cá nhân không?",
+  "Bạn có cảm thấy mình không có đủ thời gian để tập thể dục hoặc vận động thể chất vì học tập không?",
+];

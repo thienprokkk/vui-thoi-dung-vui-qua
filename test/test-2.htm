@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <div id="window__close"></div>
+
+  <div id="container">
+    <header id="header__container">
+      <div>
+        <button id="back__btn">Home</button>
+      </div>
+      <div id="question__order">1 of 19</div>
+    </header>
+
+    <p id="spacer">Let your emotions make the choices!</p>
+
+    <div id="card__container">
+      <div id="card">
+
+        <div id="header__card">
+          <img src="../images/original-image.jpg" alt="image">
+        </div>
+
+        <div id="content__card">
+          <h1 id="title-content">How can I help you?</h1>
+          <p id="content">Are you feeling distress?</p>
+        </div>
+
+        <div id="choose__card">
+          <button id="no-btn" class="choose__btn">NO</button>
+          <button id="yes-btn" class="choose__btn">YES </button>
+        </div>
+
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+  </div>
+  <script src="./test.js"></script>
+  <script>
+    // So sánh bản thân
+    TakeATest({
+      containerSelector: '#container',
+      backButtonSelector: '#back__btn',
+      cardImageSelector: '#header__card img',
+      buttonsSelector: '.choose__btn',
+      rules: [
+        TakeATest.changeQuestion(
+          '#window__close' ,'#card', 'question__changing', '#spacer', '#question__order', '#content', '#yes-btn',
+          [
+            "Bạn cảm thấy bản thân mình không bằng bạn bè?",
+            "Bạn luôn cảm thấy bản thân mình kém cỏi?",
+            "Bạn đang “thèm muốn” những gì thuộc về người khác?",
+            "Bạn cảm thấy ganh tị khi thấy người khác hơn bản thân mình?",
+            "Bạn cảm thấy không bằng lòng khi người khác có được thứ mà bạn không thể có?",
+            "Bạn có tự cho rằng bản thân dù có nỗ lực thế nào cũng không thể đạt được những thành tựu nhưng người khác?",
+            "Bạn cảm thấy bản thân “không đủ tốt” trong mọi chuyện?",
+            "Bạn luôn cảm thấy tự ti, xấu hổ khi nói chuyện làm việc với những người giỏi hơn mình?",
+            "Bạn có cảm thấy không chấp nhận con người của mình?",
+            "Bạn cảm thấy không hài lòng về những gì mình đang có?",
+          ],
+        )
+      ],
+    })
+  </script>
+</body>
+
+</html>

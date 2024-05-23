@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #4a66fb;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#header {
+  margin-top: 2%;
+  width: 100%;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  padding: 1em;
+  height: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 2.5vw;
+  margin-left: 10%;
+}
+
+.search__container {
+  margin-right: 10%;
+  width: 17%;
+  height: 70%;
+}
+
+input[type="search"] {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+input[type="search"]:focus {
+  outline: none;
+}
+
+#container {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__group-3 {
+  /* border: 1px solid; */
+  display: flex;
+  width: 80%;
+  gap: 5%;
+  margin: 2% 0 2%;
+}
+
+.card {
+  /* border: 1px solid; */
+  width: 30%;
+  aspect-ratio: 64 / 65;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3em;
+  box-shadow: 2px 3px 10px hsla(206, 10%, 86%, 0.765);
+}
+
+.card img {
+  width: 90%;
+  height: 65%;
+  border-radius: 0.5em;
+}
+
+.content__card {
+  /* border: 1px solid; */
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: #52575c;
+}
+
+.choose__card {
+  /* border: 1px solid; */
+  width: 100%;
+  height: 23%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choose__btn {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: var(--main-color);
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  width: 40%;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.test__btn {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.choose__btn:hover {
+  transform: scale(98%);
+}
+
+@media screen and (max-width: 1200px) {
+  /* body {
+    background-color: red;
+  } */
+  .container__group-3 {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* body {
+    background-color: blue;
+  } */
+  #header {
+    margin-top: 0;
+  }
+
+  .heading {
+    font-size: 4vw;
+    margin-left: 5%;
+  }
+
+  .search__container {
+    width: 50%;
+    margin-right: 5%;
+  }
+
+  .container__group-3 {
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70%;
+    margin-top: 5%;
+  }
+
+  .content__card {
+    font-size: 4vw;
+  }
+
+  .choose__btn {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    margin-left: 1%;
+    text-align: center;
+  }
+
+  .search__container {
+    width: 70%;
+    margin-right: 0;
+  }
+
+  .card {
+    width: 93%;
+  }
+}

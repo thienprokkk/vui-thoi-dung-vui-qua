@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+  <div id="window__close"></div>
+
+  <div id="container">
+
+    <header id="header__container">
+      <div>
+        <button id="back__btn">Home</button>
+      </div>
+      <div id="question__order">1 of 19</div>
+    </header>
+
+    <p id="spacer">Let your emotions make the choices!</p>
+
+    <div id="card__container">
+      <div id="card">
+
+        <div id="header__card">
+          <img src="../images/original-image.jpg" alt="image">
+        </div>
+
+        <div id="content__card">
+          <h1 id="title-content">How can I help you?</h1>
+          <p id="content">Are you feeling distress?</p>
+        </div>
+
+        <div id="choose__card">
+          <button id="no-btn" class="choose__btn">NO</button>
+          <button id="yes-btn" class="choose__btn">YES </button>
+        </div>
+
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+  </div>
+  <script src="./test.js"></script>
+  <script>
+    // Áp lực điểm số
+    TakeATest({
+      containerSelector: '#container',
+      backButtonSelector: '#back__btn',
+      cardImageSelector: '#header__card img',
+      buttonsSelector: '.choose__btn',
+      rules: [
+        TakeATest.changeQuestion(
+          '#window__close', '#card', 'question__changing', '#spacer', '#question__order', '#content', '#yes-btn',
+          [
+            "Bạn cảm thấy áp lực học tập đến từ môi trường học tập không?",
+            "Gia đình bạn thường đặt áp lực học tập lên bạn không?",
+            "Bạn có cảm thấy áp lực từ bạn bè về việc học không?",
+            "Bạn đã từng cảm thấy áp lực lớn do một kỳ thi quan trọng không?",
+            "Bạn có thể kiểm soát được áp lực học tập hay không?",
+            "Bạn cảm thấy áp lực hơn vào cuối học kỳ không?",
+            "Áp lực học tập từ công việc làm bạn căng thẳng không?",
+            "Áp lực học tập đã gây ảnh hưởng đến sức khỏe tinh thần của bạn chưa?",
+            "Bạn thường sử dụng các phương pháp giảm bớt áp lực học tập không?",
+            "Bạn cảm thấy áp lực học tập đóng vai trò tích cực trong sự phát triển cá nhân của bạn không?",
+          ],
+        )
+      ],
+    })
+  </script>
+</body>
+
+</html>
